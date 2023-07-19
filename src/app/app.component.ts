@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'costos';
+  showList = true;
+
+  toggleList() {
+    this.showList = !this.showList;
+  }
 }
